@@ -1,7 +1,9 @@
+<div class="bg-slate-300 w-3/4 mx-auto mt-6 p-6">
+
 <div class="flex items-center">
     <div class="flex items-center">
         <input checked id="checked-checkbox" type="checkbox" (click)="isActive($event)" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Is Active</label>
+        <label for="checked-checkbox" class="text-white-600 mx-3"> Is Active </label>
     </div>
 </div>
 
@@ -16,4 +18,7 @@
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Angular es un framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página</p>
     </div>
 </div>
-
+<div *ngIf="!activo">
+    <p class="text-red-600">Activa el Checkbox para ver el contenido</p>
+</div>
+</div>
